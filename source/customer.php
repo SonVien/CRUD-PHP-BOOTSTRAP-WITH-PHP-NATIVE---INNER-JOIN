@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <?php 
- include "konek.php";
+ include "../controller/konek.php";
  $sql = "SELECT * FROM tb_customer";
 ?>
 <html lang="en">
@@ -20,7 +20,7 @@
             <button class="btn btn-outline-warning m-2" type="submit">
             <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
               REFRESH DATABASE</button>
-            <a href="barang/barang.php" class="btn btn-outline-warning m-2" type="submit">TAMBAH BARANG</a>
+            <a href="../barang/barang.php" class="btn btn-outline-warning m-2" type="submit">TAMBAH BARANG</a>
           </form>
         </div>
       </nav>

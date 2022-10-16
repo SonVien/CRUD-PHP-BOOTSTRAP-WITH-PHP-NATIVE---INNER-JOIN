@@ -1,8 +1,4 @@
 <!DOCTYPE html>
-<?php
- include "controller/konek.php";
- $sql = "SELECT * FROM tb_user";
-?>
 <html>
 <head>
 	<title>Membuat Login Dengan PHP dan MySQL | MalasNgoding.com</title>	
@@ -10,7 +6,7 @@
 <body>
 	<h1>Membuat Login Dengan PHP dan MySQL | MalasNgoding.com</h1>
 	<h3>Halaman Login Sederhana</h3>
-	<form action="login2.php" method="post">		
+	<form action="source/login.php" method="post">		
 		<table>
 			<tr>
 				<td>Username</td>
@@ -25,6 +21,19 @@
 				<td><input type="submit" name="login" value="Log In"></td>
 			</tr>
 		</table>
-	</form>
+	</form>s
+  <script type="text/javascript">
+	function validasi() {
+		var username = document.getElementById("username").value;
+		var password = document.getElementById("password").value;		
+		if (username != "" && password!="") {
+			return true;
+		}else{
+			alert('Username dan Password harus di isi !');
+			return false;
+		}
+	}
+ 
+</script>
 </body>
 </html>
